@@ -1107,6 +1107,7 @@ li {
     overflow: clip;
     height: 40vh;
     gap: 2em;
+    margin-bottom: 3em;
 }
 .footer-cta-img img { 
     position: absolute;
@@ -1184,9 +1185,6 @@ li {
         width: 100%;
     }
 
-    .footer-cta-img img {
-
-    }
 }
 
 /* Media Query untuk Mobile Kecil (Lebih kecil dari 480px) */
@@ -1214,3 +1212,138 @@ li {
 }
 
 /* Footer CTA End */
+
+/* Footer Start */
+.footer-container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-info-1 img{
+    margin-bottom: 15px; 
+}
+.footer-info-1 i { 
+    margin-right: 5px;
+}
+.footer-info-2 h3{ 
+    margin: 0;
+    font-size: 20px;
+}
+.footer-info-2 ul { 
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1em;
+}
+.footer-info-2 li a{ 
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+.footer-info-2 li a:hover{ 
+    color: var(--primary-color);
+    opacity: 1;
+}
+.footer-newsletter h3 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+.footer-newsletter form { 
+    padding: 2px 2px 2px 20px;
+    background-color: var(--white-color);
+    border-radius: 5em;
+}
+.footer-newsletter form input, .footer-newsletter form button { 
+    border: none;
+    background-color: transparent;
+}
+.footer-newsletter form button  { 
+    background-color: #2B3EF4;
+    color: #fff;
+    padding:10px;
+    border-radius: 5em;
+}
+/* Media Query untuk Tablet (≤1024px) */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer-info-1,
+    .footer-info-2,
+    .footer-newsletter {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-newsletter form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-newsletter form input {
+        width: 70%;
+    }
+}
+
+/* Media Query untuk Mobile (≤768px) */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info-1 img {
+        max-width: 150px;
+    }
+
+    .footer-info-2 ul {
+        align-items: center;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .footer-newsletter form input {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-newsletter form button {
+        width: 100%;
+    }
+}
+
+/* Media Query untuk Mobile Kecil (≤480px) */
+@media screen and (max-width: 480px) {
+    .footer-container {
+        gap: 1.5em;
+    }
+
+    .footer-info-1 p {
+        font-size: 14px;
+    }
+
+    .footer-info-2 h3,
+    .footer-newsletter h3 {
+        font-size: 18px;
+    }
+
+    .footer-newsletter form {
+        padding: 10px;
+    }
+
+    .footer-newsletter form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Footer End */
