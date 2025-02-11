@@ -1345,5 +1345,11 @@ li {
         padding: 8px;
     }
 }
+.license { 
+    display: flex;
 
+}
+.license a { 
+color: #0E1028;
+}
 /* Footer End */
