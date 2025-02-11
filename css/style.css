@@ -1095,3 +1095,122 @@ li {
 }
 
 /* Pricing End */
+
+/* Footer CTA Start */
+.footer-cta-container { 
+    display: flex;
+    background-color: var(--white-color);
+    padding: 50px;
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    overflow: clip;
+    height: 40vh;
+    gap: 2em;
+}
+.footer-cta-img img { 
+    position: absolute;
+    top: 15%;
+}
+.footer-cta-text { 
+    flex-direction: column;
+    max-width: 700px;
+}
+.footer-cta-text .blue { 
+    color: var(--primary-color);
+}
+.footer-cta-text p { 
+    line-height: 1.6;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
+.footer-cta-text h1 { 
+    margin: 0;
+    font-size: 40px;
+}
+.footer-cta-text .cta-btn { 
+    width: max-content;
+}
+.footer-cta-text .cta-btn:hover { 
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+/* Media Query untuk Tablet (Lebih kecil dari 1024px) */
+@media screen and (max-width: 1024px) {
+    .footer-cta-container {
+        flex-direction: column;
+        height: 70vh;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .footer-cta-text {
+        width: 100%;
+    }
+    .footer-cta-text .cta-btn { 
+        width: max-content;
+    }
+    .footer-cta-text h1 {
+        font-size: 32px;
+    }
+
+    .footer-cta-img img {
+        position: static;
+        width: 80%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+}
+
+/* Media Query untuk Mobile (Lebih kecil dari 768px) */
+@media screen and (max-width: 768px) {
+    .footer-cta-container {
+        padding: 30px;
+        gap: 1em;
+    }
+
+    .footer-cta-text h1 {
+        font-size: 28px;
+    }
+
+    .footer-cta-text p {
+        font-size: 14px;
+    }
+
+    .footer-cta-text .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-cta-img img {
+
+    }
+}
+
+/* Media Query untuk Mobile Kecil (Lebih kecil dari 480px) */
+@media screen and (max-width: 480px) {
+    .footer-cta-container {
+        padding: 20px;
+    }
+
+    .footer-cta-text h1 {
+        font-size: 24px;
+    }
+
+    .footer-cta-text p {
+        font-size: 13px;
+    }
+
+    .footer-cta-text .cta-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .footer-cta-img img {
+        width: 90%;
+    }
+}
+
+/* Footer CTA End */
