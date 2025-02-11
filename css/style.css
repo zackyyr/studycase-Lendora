@@ -378,3 +378,143 @@ li {
 }
 
 /* UVP End */
+
+/* Benefits Start */
+.benefits { 
+    overflow: hidden;
+}
+.benefits-container { 
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.benefits-caption { 
+    display: flex;
+    flex-direction: column;
+}
+.benefits-caption__header { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.benefits-caption__header h1 { 
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+.benefits-caption__header p { 
+    margin: 0;
+    width: 500px;
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+.benefits-cards { 
+    display: flex;
+    max-width: 750px;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.highlights { 
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.benefits-card { 
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+}
+.benefits-card-desc p { 
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0;
+}
+.benefits-card-desc h3 { 
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+}
+.benefits-container > img{ 
+    position: absolute;
+    right: 17%;
+    width: 200px;
+    transform: rotate(-20deg);
+    background-size: cover;
+}
+/* Tablet (Ukuran 768px ke bawah) */
+@media (max-width:1149px) {
+    .benefits-container { 
+        justify-content: center;
+        gap: 0em;
+    } 
+    .benefits-image img {
+        display: none;
+    }
+    .benefits-card {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 849px) {
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .benefits-caption__header h1 {
+        font-size: 32px;
+    }
+
+    .benefits-caption__header p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .benefits-cards {
+        max-width: 100%;
+    }
+
+    .benefits-card {
+        width: 100%;
+    }
+
+    .benefits-image img {
+        display: none;
+    }
+}
+
+/* Mobile (Ukuran 480px ke bawah) */
+@media screen and (max-width: 480px) {
+    .benefits-caption__header h1 {
+        font-size: 28px;
+    }
+
+    .benefits-caption__header p {
+        font-size: 16px;
+    }
+
+    .benefits-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .benefits-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .benefits-card-desc h3 {
+        font-size: 18px;
+    }
+
+    .benefits-card-desc p {
+        font-size: 14px;
+    }
+
+    .benefits-image img {
+        width: 150px;
+    }
+}
+
+/* Benefits End */
