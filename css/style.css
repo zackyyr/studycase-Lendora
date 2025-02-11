@@ -382,6 +382,7 @@ li {
 /* Benefits Start */
 .benefits { 
     overflow: hidden;
+    margin-bottom: 8em;
 }
 .benefits-container { 
     display: flex;
