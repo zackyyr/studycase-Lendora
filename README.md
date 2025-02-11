@@ -1,4 +1,16 @@
-Lendora - Smart Financial Solution for Business (Landing Page) © 2025 by Zacky Raechan is licensed under CC BY-NC-SA 4.0 
+# 🚀 Lendora – Smart Financial Solution for Your Business
+
+Lendora adalah landing page startup yang berfokus pada solusi pengelolaan keuangan bagi UMKM. Dengan desain yang modern dan tampilan yang menarik, Lendora membantu bisnis dalam memahami pentingnya pencatatan keuangan serta menawarkan solusi pembiayaan yang tepat.
+
+# 🎯 Niche Lendora
+Niche pada project ini adalah Fintech atau Financial Technology
+
+# 🛠 Teknologi yang Digunakan
+Frontend: HTML, CSS, JavaScript
+Styling: CSS (Custom & Utility Classes)
+Version Control: Git & GitHub
+
+---
 
 ## 📜 License  
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**.  
