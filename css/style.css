@@ -155,7 +155,12 @@ li {
     left: 35%;
     position: absolute;
     width: 30%;
-
+}
+.hero-container .cta-btn { 
+    transition: 0.5s ease-in;
+}
+.hero-container .cta-btn:hover { 
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 1149px) { 
@@ -457,6 +462,11 @@ li {
     }
 
 }
+@media(max-width:1097px) { 
+    .img-benefits { 
+        display: none;
+    }
+}
 @media screen and (max-width: 849px) {
     .benefits-container {
         flex-direction: column;
@@ -515,6 +525,72 @@ li {
 
     .benefits-image img {
         width: 150px;
+    }
+}
+.benefits-big-cta { 
+    position: relative;
+}
+.benefits-cta-container { 
+    display: flex;  
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    border-radius: 20px;
+    padding: 50px;
+}
+.benefits-cta-text h2 { 
+    font-size: 50px;
+}
+.benefits-cta-text .blue { 
+    display: block;
+    color: var(--primary-color);
+}
+.benefits-big-cta img {
+    position: absolute;
+    width: 500px;
+    right: 1%;
+    top: -41%;
+}
+.benefits-big-cta .benefits-cta-text a:hover {
+    color: var(--white-color);
+    background-color: #0E1028;
+} 
+/* Tablet (Ukuran 768px ke bawah) */
+@media screen and (max-width: 1149px) {
+    .benefits-cta-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .benefits-cta-text h2 {
+        font-size: 40px;
+    }
+
+    .benefits-big-cta img {
+        position: static;
+        width: 350px;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile (Ukuran 480px ke bawah) */
+@media screen and (max-width: 480px) {
+    .benefits-cta-container {
+        padding: 30px;
+    }
+
+    .benefits-cta-text h2 {
+        font-size: 28px;
+    }
+
+    .benefits-big-cta img {
+        width: 250px;
+    }
+
+    .cta-btn {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 }
 
