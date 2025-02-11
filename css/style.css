@@ -105,3 +105,128 @@ li {
         justify-content: center;
     }
 }
+
+/* Hero Start */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 90px 50px;
+    border-radius: 40px;
+    background: url('/img/hero-bg.svg') no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+
+    position: relative;
+    overflow: clip;
+    height: 100vh;
+}
+.hero-header {
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    color: #ffff;
+    z-index: 10000;
+}
+.hero-header h2, .hero-header h1{ 
+    margin: 0;
+    padding: 0;
+}
+.hero-header h2 { 
+    font-size: 60px;
+    font-weight: 600;
+
+}
+.hero-header h1 { 
+    font-size: 60px;
+}
+.hero-header p {    
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+.hero-container img { 
+    object-fit: cover;
+    top: 53%;
+    left: 35%;
+    position: absolute;
+    width: 30%;
+
+}
+
+@media (max-width: 1149px) { 
+    .hero-container img { 
+        top: 60%;
+    }
+}
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-header h2 {
+        font-size: 48px;
+    }
+    .hero-header h1 {
+        font-size: 50px;
+    }
+    .hero-header p {
+        font-size: 18px;
+    }
+    .hero-container img {
+        width: 40%;
+        top: 53%;
+        left: 30%;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 0 20px 60px 20px;
+    }
+    .hero-header {
+        top: 40px;
+    }
+    .hero-header h2 {
+        font-size: 36px;
+    }
+    .hero-header h1 {
+        font-size: 38px;
+    }
+    .hero-header p {
+        font-size: 16px;
+    }
+    .hero-container img {
+        width: 50%;
+        top: 60%;
+        left: 25%;
+    }
+}
+
+/* Mobile Kecil (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-header {
+        top: 30px;
+    }
+    .hero-header h2 {
+        font-size: 28px;
+    }
+    .hero-header h1 {
+        font-size: 32px;
+    }
+    .hero-header p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .hero-container img {
+        width: 60%;
+        top: 65%;
+        left: 20%;
+    }
+    .cta-btn {
+        padding: 0.6em 1.2em;
+        font-size: 14px;
+    }
+}
+
+/* Hero End */
